@@ -34,6 +34,7 @@ function NewRecipe({ user }) {
         title,
         instructions,
         minutes_to_complete: minutesToComplete,
+        user_id: user.id,
       }),
     }).then((r) => {
       setIsLoading(false);
